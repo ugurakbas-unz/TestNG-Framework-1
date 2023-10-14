@@ -20,8 +20,7 @@ public class AmazonTest03 {
         // 4. Sayfanin konumunu ve boyutunu istediginiz sekilde ayarlayin
         Driver.getDriver().manage().window().setSize(new Dimension(200,200));
         Driver.getDriver().manage().window().setPosition(new Point(200,200));
-        // 5. Sayfanin sizin istediginiz konum ve boyuta geldigini test edin
-
-        // 8. Sayfayi kapatin
+        //  Sayfayi kapatin
+        Driver.closeDriver();
     }
 }
