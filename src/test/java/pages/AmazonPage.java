@@ -5,7 +5,27 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class AmazonPage {
+
+    public void aramaSonucSayisi(String[] arr){
+
+
+        //[1-16, of, 136, results, for, "city, bike"] amazon arama sonuc yazısı
+
+        int index = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].contains("result")){
+                index = i;
+            }
+
+        }
+        String sonucsayisiInt = arr[index-1].replaceAll("\\D","");
+        int sonucSayisi = Integer.parseInt(sonucsayisiInt);
+        System.out.println("aranan metin ile ilgili " +sonucSayisi+ " adet sonuc bulunmuştur");
+    }
 
     public AmazonPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -34,6 +54,9 @@ public class AmazonPage {
 
     @FindBy(xpath = "//span[@id='gc-live-preview-amount']")
     public WebElement urunUcretiElementi;
+
+    @FindBy(xpath = "//span[@class='a-size-base a-color-base']")
+    public List<WebElement> tumSayfaBasliklari;
 
 
 }

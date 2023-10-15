@@ -23,7 +23,7 @@ public class AmazonTest05 {
         // 3- Görüntülenen sonuçların sayısını yazdırın
         String aramaSonucstr = amazonPage.aramaSonucElementi.getText();
         String[] sonucYazisiArr = aramaSonucstr.split(" ");
-        AmazonAramaSonucSayisi.aramaSonucSayisi(sonucYazisiArr);
+       amazonPage.aramaSonucSayisi(sonucYazisiArr);
         // 4- Listeden ilk urunun resmine tıklayın.
         amazonPage.ilkSonucElementi.click();
 
