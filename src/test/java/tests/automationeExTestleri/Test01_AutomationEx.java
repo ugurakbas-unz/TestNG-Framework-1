@@ -1,9 +1,9 @@
-package tests.digerUrltestleri;
+package tests.automationeExTestleri;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.ConfigReader;
-import pages.PageAutomationeEx;
+import pages.AutomationeExPage;
 import utilities.Driver;
 
 import java.util.List;
@@ -13,7 +13,7 @@ public class Test01_AutomationEx {
     @Test
     public void test01(){
 
-        PageAutomationeEx pageAutomationeEx = new PageAutomationeEx();
+        AutomationeExPage pageAutomationeEx = new AutomationeExPage();
 
         // 2-https://www.automationexercise.com/ adresine gidin
         Driver.getDriver().get(ConfigReader.getProperty("aeUrl"));

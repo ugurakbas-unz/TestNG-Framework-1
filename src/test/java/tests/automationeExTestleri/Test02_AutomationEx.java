@@ -1,9 +1,9 @@
-package tests.digerUrltestleri;
+package tests.automationeExTestleri;
 
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.PageAutomationeEx;
+import pages.AutomationeExPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -14,7 +14,7 @@ public class Test02_AutomationEx {
     @Test
     public void test02(){
 
-        PageAutomationeEx pageAutomationeEx = new PageAutomationeEx();
+        AutomationeExPage pageAutomationeEx = new AutomationeExPage();
         SoftAssert softAssert = new SoftAssert();
 
         // 2-https://www.automationexercise.com/ adresine gidin

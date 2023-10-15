@@ -7,9 +7,9 @@ import utilities.Driver;
 
 import java.util.List;
 
-public class PageAutomationeEx {
+public class AutomationeExPage {
 
-    public PageAutomationeEx(){
+    public AutomationeExPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
